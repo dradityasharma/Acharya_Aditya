@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="Dr. Aditya Sharma — Music, Spirituality and Astrology. Explore sessions and request an appointment.">
+<title>Dr. Aditya Sharma | Music • Spirituality • Astrology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0b1020;--indigo:#161d3d;--saffron:#f2a93b;--gold:#f6d78a;--ivory:#fbf6ea;--ink:#1d2340;--muted:#646a85;--line:#eadfc6;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--ivory);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0}
+:focus-visible{outline:2px solid var(--saffron);outline-offset:3px}
+
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:20;transition:.35s}
+header.solid{background:#0b1020ee;backdrop-filter:blur(14px);box-shadow:0 1px 0 #f6d78a33}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:78px;gap:18px}
+.brand{font:700 25px var(--serif);color:var(--gold);line-height:1}.brand small{display:block;font:500 10px var(--sans);letter-spacing:1.5px;color:#cfd4e8;margin-top:5px}
+nav{display:flex;gap:28px;font-size:14px;color:#e6e9f5}nav a{position:relative;padding:4px 0}
+nav a:after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--gold);transition:.3s}nav a:hover:after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:40px;background:linear-gradient(120deg,var(--gold),var(--saffron));color:#241a05;font:700 14px var(--sans);border:0;cursor:pointer;transition:.3s;box-shadow:0 8px 24px #f2a93b44}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px #f2a93b66}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid #f6d78a99;box-shadow:none}.btn.ghost:hover{background:#f6d78a18}
+
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;color:#fff;position:relative;overflow:hidden;padding:120px 0 80px;
+background:radial-gradient(ellipse at 75% 40%,#2c2a63 0,#161d3d 40%,#0b1020 80%)}
+.stars{position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff,transparent),radial-gradient(1px 1px at 120px 90px,#f6d78a,transparent),radial-gradient(1.5px 1.5px at 210px 160px,#fff,transparent),radial-gradient(1px 1px at 300px 40px,#fff,transparent);background-size:340px 220px;opacity:.55;animation:twinkle 6s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.25}}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.eyebrow{color:var(--gold);font-size:14px;letter-spacing:.5px}
+h1{font-size:clamp(50px,7vw,92px);line-height:.98;margin:16px 0 10px;letter-spacing:-1px}
+h1 em{display:block;font-style:italic;font-weight:500;background:linear-gradient(100deg,var(--gold),var(--saffron));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tagline{font:italic 500 26px var(--serif);color:#f3e6c4;margin:0 0 18px}
+.hero p{color:#d6dbee;max-width:540px;font-size:17px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.mandala{position:relative;aspect-ratio:1;width:min(480px,100%);margin:auto;display:grid;place-items:center}
+.mandala svg{position:absolute;inset:0;width:100%;height:100%}
+.ring1{animation:spin 90s linear infinite;transform-origin:center}.ring2{animation:spin 60s linear infinite reverse;transform-origin:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.earth{position:relative;width:27%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 30%,#8fd8ff,#1c6fd1 45%,#0a2a6b 82%);box-shadow:0 0 40px #4aa8ff88,0 0 110px #4aa8ff44,inset -16px -12px 28px #000b;overflow:hidden;animation:glow 5s ease-in-out infinite alternate}
+.earth svg{position:absolute;inset:0;width:200%;height:100%;fill:#56b36f;animation:drift 36s linear infinite}
+.earth:after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 30% 28%,#ffffff55,transparent 40%)}
+@keyframes drift{to{transform:translateX(-50%)}}
+@keyframes glow{to{box-shadow:0 0 60px #4aa8ffcc,0 0 150px #4aa8ff66,inset -16px -12px 28px #000b}}
+.orbit{position:absolute;border-radius:50%;animation:spin linear infinite}
+.orbit i{position:absolute;top:0;left:50%;border-radius:50%;transform:translate(-50%,-50%);aspect-ratio:1}
+.o1{inset:24%;animation-duration:16s}.o1 i{width:7%;background:radial-gradient(circle at 30% 30%,#ff9a6b,#c0431f);box-shadow:0 0 12px #ff7a4a}
+.o2{inset:17.5%;animation-duration:28s;animation-direction:reverse}.o2 i{width:9%;background:radial-gradient(circle at 30% 30%,#fff1c2,#d9a441);box-shadow:0 0 14px #f6d78a}
+.o3{inset:8%;animation-duration:48s}.o3 i{width:7%;background:radial-gradient(circle at 30% 30%,#f5dfb0,#b98a46)}
+.o3 i:after{content:"";position:absolute;left:-55%;right:-55%;top:35%;bottom:35%;border:2px solid #f6d78acc;border-radius:50%;transform:rotate(-18deg)}
+.o4{inset:2.5%;animation-duration:75s;animation-direction:reverse}.o4 i{width:6%;background:linear-gradient(#e8a96a 0 30%,#c9794a 30% 55%,#e8c9a0 55%);box-shadow:0 0 14px #e8a96a99}
+.eq{position:absolute;bottom:2%;display:flex;gap:5px;align-items:flex-end;height:40px}
+.eq i{width:4px;border-radius:3px;background:var(--gold);animation:bar 1.1s ease-in-out infinite alternate}
+.eq i:nth-child(2n){animation-duration:.8s}.eq i:nth-child(3n){animation-duration:1.4s}.eq i:nth-child(5n){animation-duration:.65s}
+@keyframes bar{from{height:6px}to{height:38px}}
+
+/* stats */
+.stats{background:var(--night);color:#fff;border-top:1px solid #f6d78a33}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.stats-grid div{padding:28px 10px;border-right:1px solid #ffffff14}.stats-grid div:last-child{border:0}
+.stats strong{display:block;font:600 28px var(--serif);color:var(--gold)}.stats span{font-size:13px;color:#b9c0da}
+
+/* sections */
+section{padding:96px 0}
+.heading{text-align:center;max-width:680px;margin:0 auto 52px}
+.heading h2{font-size:clamp(36px,5vw,56px);color:var(--night);line-height:1.1}.heading p{color:var(--muted);margin:14px 0 0}
+.heading .eyebrow{color:#a8741a}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{position:relative;padding:30px 26px;background:#fff;border:1px solid var(--line);border-radius:22px;transition:.35s;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--gold),var(--saffron));transform:scaleX(0);transform-origin:left;transition:.4s}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px #1d234018}.card:hover:before{transform:scaleX(1)}
+.symbol{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(145deg,var(--indigo),var(--night));color:var(--gold);font-size:24px;margin-bottom:18px}
+.card h3{font-size:25px;color:var(--night);margin-bottom:8px}.card p{margin:0;color:var(--muted);font-size:15px}
+
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.about-art{position:relative;padding:46px 40px;border-radius:28px;color:#fff;background:linear-gradient(150deg,#2a2860,var(--night));overflow:hidden}
+.about-art:after{content:"ॐ";position:absolute;right:-20px;bottom:-60px;font:600 240px var(--serif);color:#f6d78a12}
+.about-art h3{font-size:42px;color:var(--gold);line-height:1.1;margin:10px 0 16px}.about-art p{color:#dde2f3;font:italic 500 21px/1.55 var(--serif);margin:0 0 26px;position:relative}
+.about-copy h2{font-size:clamp(36px,4.5vw,52px);color:var(--night);margin:8px 0 6px}.about-copy p{color:var(--muted)}
+.checks{padding:0;list-style:none;margin:20px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.checks li{padding:14px 16px;background:var(--ivory);border-radius:14px;font-size:14px;font-weight:500;border:1px solid var(--line)}
+.checks li:before{content:"✦";color:var(--saffron);margin-right:9px}
+
+.fees{background:radial-gradient(ellipse at 20% 0,#25255a,var(--night) 70%);color:#fff}
+.fees .heading h2{color:#fff}.fees .heading p{color:#c4cae2}.fees .heading .eyebrow{color:var(--gold)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.price{display:flex;flex-direction:column;padding:26px;border:1px solid #ffffff1f;border-radius:20px;background:#ffffff08;backdrop-filter:blur(6px);transition:.3s}
+.price:hover{border-color:#f6d78a88;background:#ffffff10;transform:translateY(-4px)}
+.price h3{font-size:24px;color:#fff}.price p{font-size:13px;color:#bcc3de;margin:6px 0 0}
+.price .amount{margin-top:auto;padding-top:18px;font:600 40px var(--serif);color:var(--gold)}
+.price.featured{border-color:var(--gold);background:linear-gradient(160deg,#f6d78a1f,#ffffff08);box-shadow:0 0 40px #f2a93b22}
+.fee-note{font-size:13px;color:#aeb6d3;text-align:center;margin:34px auto 0;max-width:760px}
+
+.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:start}
+.booking-intro{background:linear-gradient(150deg,#2a2860,var(--night));color:#fff;padding:38px 34px;border-radius:26px;position:sticky;top:100px}
+.booking-intro h3{font-size:36px;color:var(--gold);margin-bottom:12px}.booking-intro p{color:#d6dbee}
+.booking-intro ul{padding:0;list-style:none}.booking-intro li{margin:14px 0;padding-left:30px;position:relative;color:#f3ead2}.booking-intro li:before{content:"✦";position:absolute;left:0;color:var(--saffron)}
+form{background:#fff;padding:36px;border:1px solid var(--line);border-radius:26px;box-shadow:0 24px 60px #1d23401a}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field.full{grid-column:1/-1}
+label{display:block;font-size:13px;font-weight:700;margin-bottom:7px;color:var(--ink)}
+input,select,textarea{width:100%;padding:14px 15px;border:1px solid #dcd6c6;border-radius:12px;font:15px var(--sans);background:#fffdf8;color:var(--ink);transition:.2s}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--saffron);box-shadow:0 0 0 4px #f2a93b2b}
+.form-help{font-size:12px;color:var(--muted);margin:18px 0}
+.form-status{font-size:14px;color:#1f6b45;margin-top:12px;min-height:20px}
+.submit{width:100%;padding:16px}
+
+.quote{text-align:center;padding:90px 20px;background:linear-gradient(rgba(11,16,32,.88),rgba(11,16,32,.88)),radial-gradient(circle at 50% 0,#3a3680,#0b1020);color:#fff}
+.quote blockquote{font:italic 500 clamp(26px,3.6vw,42px)/1.4 var(--serif);color:var(--gold);max-width:860px;margin:0 auto 16px}.quote p{color:#c9cfe6;margin:0}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{border:1px solid var(--line);border-radius:24px;padding:34px;background:#fff}
+.contact-card h3{font-size:32px;color:var(--night);margin-bottom:12px}.contact-card p{color:var(--muted)}.contact-card a:not(.btn){color:#a8741a;font-weight:700}
+.disclaimer{font-size:12px;margin-top:18px}
+footer{background:var(--night);color:#cfd4e8;text-align:center;padding:44px 0;font-size:14px}footer strong{font:600 24px var(--serif);color:var(--gold)}
+
+/* floating */
+.music-toggle{position:fixed;left:22px;bottom:22px;z-index:30;padding:12px 18px;border-radius:40px;background:#0b1020e6;color:var(--gold);border:1px solid #f6d78a88;font:700 13px var(--sans);cursor:pointer;backdrop-filter:blur(8px);transition:.3s}
+.music-toggle:hover{transform:scale(1.05)}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:30;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 28px #25d36666;transition:.3s}
+.wa-float:hover{transform:scale(1.08)}.wa-float svg{width:30px;fill:#fff}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:900px){nav{display:none}.hero-grid,.about-grid,.booking-grid{grid-template-columns:1fr}.hero-copy{text-align:center}.hero p{margin:auto}.hero-actions{justify-content:center}.mandala{width:min(340px,86%)}.cards,.price-grid{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}.stats-grid div:nth-child(2){border:0}.booking-intro{position:static}}
+@media(max-width:580px){section{padding:68px 0}.cards,.price-grid,.contact-grid,.form-grid,.checks{grid-template-columns:1fr}.field.full{grid-column:auto}form{padding:22px}.nav>.btn{padding:10px 16px;font-size:12px}.brand{font-size:21px}.brand small{display:none}.hero-actions .btn{width:100%}.about-art{padding:34px 26px}}
+
+/* ===== UNIVERSE THEME ===== */
+body{background:#03050d;color:#e6e9f5}
+#space{position:fixed;inset:0;width:100%;height:100%;z-index:-1;display:block}
+.stars{display:none}
+.hero,.about,.fees{background:transparent}
+.stats{background:#03050d99;backdrop-filter:blur(10px)}
+.hero:after{content:"";position:absolute;left:50%;bottom:-70vw;width:120vw;height:90vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse at 50% 0,#f2a93b55 0,#7a5cff33 18%,transparent 60%);pointer-events:none}
+.heading h2,.about-copy h2,.card h3,.contact-card h3{color:#fff}
+.heading p,.about-copy p,.card p,.contact-card p{color:#c2c9e3}
+.heading .eyebrow,.about-copy .eyebrow{color:var(--gold)!important}
+.card,.contact-card,.checks li{background:#ffffff0c;border:1px solid #ffffff1f;backdrop-filter:blur(10px)}
+.card:hover{box-shadow:0 22px 50px #000a,0 0 40px #7a5cff22;border-color:#f6d78a66}
+.checks li{color:#e6e9f5}
+.contact-card a:not(.btn){color:var(--gold)}
+.about-art,.booking-intro{background:linear-gradient(150deg,#2a286099,#0b102099);border:1px solid #f6d78a33;backdrop-filter:blur(12px)}
+form{background:#0b1030cc;border:1px solid #ffffff1f;backdrop-filter:blur(14px);box-shadow:0 30px 80px #000a}
+label{color:#e6e9f5}
+input,select,textarea{background:#ffffff0f;border:1px solid #ffffff2a;color:#fff}
+input::placeholder,textarea::placeholder{color:#8f97b8}
+option{color:#17243b}
+.form-help{color:#aeb6d3}.form-status{color:#7ee2a8}
+.quote{background:#03050d80;backdrop-filter:blur(4px);border-block:1px solid #f6d78a22}
+footer{background:#03050dcc}
+
+/* poster section */
+.poster-sec{padding:70px 0 20px}
+.poster-frame{position:relative;width:min(520px,100%);margin:0 auto;padding:12px;border-radius:26px;background:linear-gradient(145deg,var(--gold),var(--saffron) 50%,#8a5a12);box-shadow:0 30px 90px #000b,0 0 90px #f2a93b33;transition:.5s}
+.poster-frame:hover{transform:translateY(-6px) scale(1.01)}
+.poster-frame img{display:none;width:100%;height:auto;border-radius:16px}
+.poster-frame.loaded img{display:block}
+.ph{aspect-ratio:4/5;border-radius:16px;border:2px dashed #f6d78a99;background:#0b1030cc;display:grid;place-content:center;text-align:center;gap:6px;padding:20px;color:#c2c9e3}
+.ph strong{font:600 30px var(--serif);color:var(--gold)}.ph span{font-size:14px}
+.poster-frame.loaded .ph{display:none}
+
+.poster-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.poster-grid .poster-frame{margin:0 auto}
+.om-panel{position:relative;display:grid;place-items:center;gap:6px;aspect-ratio:1;width:min(440px,100%);margin:auto}
+.om-ring{position:absolute;inset:0;border-radius:50%;border:1px dashed #f6d78a66;box-shadow:inset 0 0 80px #7a5cff33,0 0 80px #f2a93b1a;animation:spin 80s linear infinite}
+.om-ring:before{content:"";position:absolute;inset:11%;border-radius:50%;border:1px solid #f6d78a44}
+.om-sym{position:relative;font:600 clamp(110px,16vw,190px)/1 var(--serif);color:var(--gold);text-shadow:0 0 40px #f2a93bbb,0 0 100px #f2a93b66;animation:omglow 4s ease-in-out infinite alternate}
+.om-med{position:relative;font-size:clamp(54px,8vw,84px);line-height:1;filter:drop-shadow(0 0 22px #f6d78a99);animation:float 6s ease-in-out infinite}
+@keyframes omglow{to{text-shadow:0 0 60px #f2a93bee,0 0 140px #f2a93b99}}
+@keyframes float{50%{transform:translateY(-10px)}}
+@media(max-width:900px){.poster-grid{grid-template-columns:1fr;gap:34px}.om-panel{width:min(320px,86%)}}
+
+/* om panel: Om dead-centre in the ring, meditation emoji tucked at the bottom */
+.om-panel{display:grid;place-items:center;gap:0}
+.om-panel>*{grid-area:1/1}
+.om-sym{display:block;line-height:1;margin:0;transform:translateY(-4%)}
+.om-med{align-self:end;justify-self:center;margin-bottom:14%}
+</style>
+</head>
+<body>
+<canvas id="space" aria-hidden="true"></canvas>
+<header id="top"><div class="wrap nav">
+<a class="brand" href="#">Dr. Aditya Sharma<small>ACHARYA ADITYA · MUSIC • SPIRITUALITY • ASTROLOGY</small></a>
+<nav><a href="#about">About</a><a href="#services">Services</a><a href="#fees">Fees</a><a href="#booking">Registration</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="#booking">✦ Book Appointment</a>
+</div></header>
+<main>
+<section class="hero"><div class="stars"></div><div class="wrap hero-grid">
+<div class="hero-copy">
+<div class="eyebrow">Welcome to my wellness world</div>
+<h1>Dr. Aditya<em>Sharma</em></h1>
+<div class="tagline">Acharya Aditya</div>
+<p><strong>Music · Spirituality · Astrology</strong><br>A holistic wellness experience to explore calm, self-awareness and positive living through soulful music, mindful practices and traditional guidance.</p>
+<p style="margin-top:12px;color:var(--gold)">Music for the soul. Guidance for life.</p>
+<div class="hero-actions"><a class="btn" href="#booking">✦ Book Your Session</a><a class="btn ghost" href="#services">Explore Services</a></div>
+</div>
+<div class="hero-visual" id="heroVisual">
+<div class="mandala" aria-hidden="true">
+<svg viewBox="0 0 400 400" fill="none" stroke="#f6d78a">
+<g class="ring1"><circle cx="200" cy="200" r="190" stroke-opacity=".35" stroke-dasharray="2 9"/><g stroke-opacity=".4"><ellipse cx="200" cy="85" rx="26" ry="62"/><ellipse cx="200" cy="85" rx="26" ry="62" transform="rotate(45 200 200)"/><ellipse cx="200" cy="85" rx="26" ry="62" transform="rotate(90 200 200)"/><ellipse cx="200" cy="85" rx="26" ry="62" transform="rotate(135 200 200)"/><ellipse cx="200" cy="85" rx="26" ry="62" transform="rotate(180 200 200)"/><ellipse cx="200" cy="85" rx="26" ry="62" transform="rotate(225 200 200)"/><ellipse cx="200" cy="85" rx="26" ry="62" transform="rotate(270 200 200)"/><ellipse cx="200" cy="85" rx="26" ry="62" transform="rotate(315 200 200)"/></g></g>
+<g class="ring2"><circle cx="200" cy="200" r="130" stroke-opacity=".5"/><circle cx="200" cy="200" r="104" stroke-opacity=".3" stroke-dasharray="1 7"/><rect x="118" y="118" width="164" height="164" stroke-opacity=".3" transform="rotate(45 200 200)"/><rect x="118" y="118" width="164" height="164" stroke-opacity=".3"/></g>
+</svg>
+<div class="orbit o4"><i></i></div><div class="orbit o3"><i></i></div><div class="orbit o2"><i></i></div><div class="orbit o1"><i></i></div>
+<div class="earth"><svg viewBox="0 0 200 100" preserveAspectRatio="none"><g id="lands"><path d="M14 30c8-8 20-8 24 0s-2 14 4 20-6 22-14 16-4-14-12-18-8-10-2-18z"/><path d="M56 22c10-6 24-2 26 8s-10 12-8 22-14 14-18 2 0-26 0-32z"/><path d="M30 70c8-4 16 0 14 8s-12 8-14 0z"/><path d="M82 66c6-3 12 0 10 6s-10 6-10 0z"/></g><use href="#lands" x="100"/></svg></div>
+<div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+</div>
+</div></section>
+<div class="stats"><div class="wrap stats-grid"><div><strong>10+ Years</strong><span>Astrology &amp; guidance experience</span></div><div><strong>Personalised</strong><span>One-to-one sessions</span></div><div><strong>Online / In-person</strong><span>By appointment</span></div><div><strong>Holistic</strong><span>Mind · Music · Spirituality</span></div></div></div>
+
+<section class="poster-sec" id="poster"><div class="wrap"><div class="heading reveal" style="margin-bottom:34px"><div class="eyebrow">Featured</div><h2>Poster</h2></div>
+<!-- POSTER SLOT: save your poster as poster.jpg in the same folder as index.html (portrait 4:5, about 1000 x 1250 px works best) -->
+<div class="poster-grid">
+<figure class="poster-frame reveal" id="posterFrame"><img id="posterImg" src="poster.jpg" alt="Dr. Aditya Sharma — poster"><div class="ph"><strong>Poster space</strong><span>Add <b>poster.jpg</b> in the same folder</span></div></figure>
+<div class="om-panel reveal" aria-hidden="true"><div class="om-ring"></div><div class="om-sym">ॐ</div><div class="om-med">🧘</div></div>
+</div>
+</div></section>
+<section class="services" id="services"><div class="wrap"><div class="heading reveal"><div class="eyebrow">Explore the possibilities</div><h2>My Services</h2><p>Choose a service that matches what you would like to explore. Sessions are personalised and begin with a conversation about your expectations.</p></div>
+<div class="cards reveal">
+<div class="card"><div class="symbol">♫</div><h3>Music Healing &amp; Relaxation</h3><p>Mindful listening and soothing music experiences to encourage relaxation, calmness and emotional balance.</p></div>
+<div class="card"><div class="symbol">☼</div><h3>Astrology Guidance</h3><p>Traditional birth-chart interpretation and reflective guidance for personal questions and life decisions.</p></div>
+<div class="card"><div class="symbol">ॐ</div><h3>Spiritual Guidance</h3><p>Meditation, spiritual practices and guidance to support self-awareness and a more mindful daily life.</p></div>
+<div class="card"><div class="symbol">✋</div><h3>Palmistry &amp; Face Reading</h3><p>Traditional interpretive practices offered as cultural and personal reflection, not as certainty about the future.</p></div>
+<div class="card"><div class="symbol">⌂</div><h3>Vastu Consultation</h3><p>Vastu-based suggestions for homes and workspaces, with practical and thoughtful recommendations.</p></div>
+<div class="card"><div class="symbol">✧</div><h3>Akashic Records</h3><p>A spiritual reflection session for people interested in inner exploration, personal questions and life direction.</p></div>
+<div class="card"><div class="symbol">♡</div><h3>Healing &amp; Divine Guidance</h3><p>Supportive conversations and reflective practices intended to encourage hope, resilience and positive thinking.</p></div>
+<div class="card"><div class="symbol">◎</div><h3>Meditation &amp; Mindfulness</h3><p>Guided breathing and meditation practices to help you pause, reset and reconnect with yourself.</p></div>
+<div class="card"><div class="symbol">✦</div><h3>Personal Life Guidance</h3><p>A respectful space to discuss your concerns and consider constructive next steps at your own pace.</p></div>
+</div></div></section>
+
+<section class="about" id="about"><div class="wrap about-grid">
+<div class="about-art reveal"><div class="eyebrow">Music for the soul</div><h3>Peaceful Mind.<br>Positive Living.</h3><p>“Music can create a moment of calm. Mindfulness can help us pause. Thoughtful guidance can help us consider a new direction.”</p><a class="btn" href="#booking">Connect with Me</a></div>
+<div class="about-copy reveal"><div class="eyebrow" style="color:#a8741a">About your guide</div><h2>Dr. Aditya Sharma</h2><p><strong>Acharya Aditya · Music &amp; Spiritual Wellness Guide</strong></p><p>A professional singer, guitarist, music composer, lyricist and multi-instrumentalist with a deep connection to music and spiritual practices. My aim is to bring music, mindfulness and traditional guidance together in a welcoming, respectful and personalised experience.</p><ul class="checks"><li>15+ years of music experience</li><li>10+ years of astrology experience</li><li>Music, spirituality and traditional guidance</li><li>Personalised online sessions by appointment</li></ul></div>
+</div></section>
+
+<section class="fees" id="fees"><div class="wrap"><div class="heading reveal"><div class="eyebrow">Simple &amp; transparent</div><h2>Session Fees</h2><p>Indicative fees shown below. Please confirm availability, final fee and session duration before making any payment.</p></div>
+<div class="price-grid reveal">
+<div class="price"><h3>Music Healing &amp; Relaxation</h3><p>Approx. 45–60 minutes</p><div class="amount">₹1,100</div></div>
+<div class="price"><h3>Astrology Guidance</h3><p>Approx. 45–60 minutes</p><div class="amount">₹1,100</div></div>
+<div class="price"><h3>Spiritual Guidance</h3><p>Approx. 45–60 minutes</p><div class="amount">₹1,100</div></div>
+<div class="price"><h3>Palmistry &amp; Face Reading</h3><p>Approx. 45–60 minutes</p><div class="amount">₹1,100</div></div>
+<div class="price"><h3>Vastu Consultation</h3><p>Approx. 60–90 minutes</p><div class="amount">₹1,500</div></div>
+<div class="price"><h3>Akashic Records</h3><p>Approx. 60–90 minutes</p><div class="amount">₹1,500</div></div>
+<div class="price"><h3>Healing &amp; Divine Guidance</h3><p>Approx. 60–90 minutes</p><div class="amount">₹1,500</div></div>
+<div class="price"><h3>Meditation &amp; Mindfulness</h3><p>Approx. 45–60 minutes</p><div class="amount">₹1,100</div></div>
+<div class="price featured"><h3>Combo Session</h3><p>Any 3 selected services · Approx. 120 minutes</p><div class="amount">₹3,000</div></div>
+<div class="price"><h3>Monthly Wellness Plan</h3><p>3 sessions · Any service</p><div class="amount">₹2,999</div></div>
+<div class="price"><h3>Complete Guidance Package</h3><p>7 sessions · All services</p><div class="amount">₹6,999</div></div>
+<div class="price"><h3>Registration</h3><p>Proposed one-time registration fee — confirm before payment</p><div class="amount">₹199</div></div>
+</div><p class="fee-note">The fees and packages are draft suggestions for your approval, not a payment confirmation. No payment is collected on this demo website.</p></div></section>
+
+<section class="booking" id="booking"><div class="wrap"><div class="heading reveal"><div class="eyebrow">Your first step</div><h2>Registration &amp; Appointment Form</h2><p>Fill in your details and choose the service you are interested in. Your message will open in WhatsApp for confirmation.</p></div>
+<div class="booking-grid">
+<div class="booking-intro reveal"><h3>Book Your Session</h3><p>Share a few details so we can understand your enquiry and discuss a suitable session.</p><ul><li>Choose your preferred service</li><li>Request an online or in-person appointment</li><li>Confirm the date, fee and availability on WhatsApp</li></ul><p><strong>Registration fee:</strong> ₹199 proposed — payable only after direct confirmation.</p></div>
+<form id="bookingForm" class="reveal">
+<div class="form-grid">
+<div class="field"><label for="name">Full Name *</label><input id="name" name="name" required placeholder="Enter your full name"></div>
+<div class="field"><label for="phone">Mobile Number *</label><input id="phone" name="phone" required inputmode="tel" pattern="[0-9+\-\s]{8,16}" placeholder="Your contact number"></div>
+<div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+<div class="field"><label for="city">City</label><input id="city" name="city" placeholder="Your city"></div>
+<div class="field"><label for="service">Select Service *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Music Healing &amp; Relaxation</option><option>Astrology Guidance</option><option>Spiritual Guidance</option><option>Palmistry &amp; Face Reading</option><option>Vastu Consultation</option><option>Akashic Records</option><option>Healing &amp; Divine Guidance</option><option>Meditation &amp; Mindfulness</option><option>Personal Life Guidance</option><option>Combo Session</option><option>Monthly Wellness Plan</option><option>Complete Guidance Package</option></select></div>
+<div class="field"><label for="mode">Session Mode</label><select id="mode" name="mode"><option>Online</option><option>In-person</option><option>Need guidance</option></select></div>
+<div class="field"><label for="date">Preferred Date</label><input id="date" name="date" type="date"></div>
+<div class="field"><label for="time">Preferred Time</label><select id="time" name="time"><option>Any suitable time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+<div class="field full"><label for="message">Your Question / Message (Optional)</label><textarea id="message" name="message" placeholder="Briefly tell us what you would like to discuss. Please avoid sharing highly sensitive personal information."></textarea></div>
+</div>
+<p class="form-help">By submitting, you agree that the details you enter will be shared through WhatsApp to respond to your enquiry. This page does not store your information or process payments.</p>
+<button class="btn submit" type="submit">✦ Submit Registration on WhatsApp</button>
+<div class="form-status" id="formStatus" aria-live="polite"></div>
+</form></div></div></section>
+
+<div class="quote reveal"><blockquote>“Sangeet se shanti, spirituality se sakaratmakta, aur margdarshan se behtar jeevan ki or.”</blockquote><p>Let’s grow together.</p></div>
+
+<section id="contact"><div class="wrap"><div class="heading reveal"><div class="eyebrow">Let's connect</div><h2>Contact Dr. Aditya Sharma</h2><p>For appointments, session details and enquiries.</p></div>
+<div class="contact-grid reveal"><div class="contact-card"><h3>Contact Details</h3><p><strong>Phone / WhatsApp</strong><br><a href="tel:+919549456344">+91 9549 456 344</a></p><p><strong>Email</strong><br><a href="mailto:adityamusic99.as@gmail.com">adityamusic99.as@gmail.com</a></p><p><strong>Sessions</strong><br>Online / In-person · By appointment</p></div>
+<div class="contact-card"><h3>Ready to begin?</h3><p>Send a message to ask about services, appointment availability and final fees.</p><a class="btn" href="https://wa.me/919549456344?text=Namaste%20Dr.%20Aditya%20Sharma%2C%20I%20would%20like%20to%20know%20about%20your%20sessions.">Message on WhatsApp</a><p class="disclaimer">Music-based relaxation and spiritual services are complementary wellness experiences, not medical diagnosis or treatment, and do not replace care from a qualified healthcare professional.</p></div></div></div></section>
+</main>
+<footer><div class="wrap"><strong>Dr. Aditya Sharma · Acharya Aditya</strong><br>Music · Spirituality · Astrology<br><span style="opacity:.75">Positive Mind · Peaceful Heart · Brighter Future</span><br><br>© 2026 Dr. Aditya Sharma. All rights reserved.</div></footer>
+
+<audio id="backgroundMusic" src="music.mp3" loop preload="auto"></audio>
+<button id="musicToggle" class="music-toggle" type="button" aria-label="Toggle background music">🔊 Music On</button>
+<a class="wa-float" href="https://wa.me/919549456344?text=Namaste%20Dr.%20Aditya%20Sharma%2C%20I%20would%20like%20to%20know%20about%20your%20sessions." aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.100-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.9 2.100c.1.200.1.400 0 .6l-.4.600c-.2.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1c.2-.3.400-.2.700-.1l2 1c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg></a>
+
+<script>
+// universe background: nebula, milky way, twinkling parallax stars, shooting stars
+(()=>{const c=document.getElementById('space'),x=c.getContext('2d'),neb=document.createElement('canvas'),reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let W,H,D,stars=[],shoots=[],sy=0,t=0,raf;
+function build(){D=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;c.width=W*D;c.height=H*D;neb.width=W*D;neb.height=H*D;
+const n=neb.getContext('2d');n.scale(D,D);n.fillStyle='#03050d';n.fillRect(0,0,W,H);
+n.save();n.translate(W/2,H/2);n.rotate(-.5);const g=n.createLinearGradient(0,-H*.35,0,H*.35);g.addColorStop(0,'rgba(120,110,220,0)');g.addColorStop(.5,'rgba(160,140,240,.17)');g.addColorStop(1,'rgba(120,110,220,0)');n.fillStyle=g;n.fillRect(-W,-H*.35,W*2,H*.7);n.restore();
+[[.2,.25,.45,'90,60,200',.24],[.82,.2,.4,'30,120,210',.17],[.7,.78,.5,'210,70,150',.15],[.12,.85,.4,'242,169,59',.1],[.5,.5,.35,'70,50,170',.13]].forEach(([bx,by,br,col,a])=>{const r=br*Math.max(W,H),rg=n.createRadialGradient(bx*W,by*H,0,bx*W,by*H,r);rg.addColorStop(0,`rgba(${col},${a})`);rg.addColorStop(1,`rgba(${col},0)`);n.fillStyle=rg;n.fillRect(0,0,W,H)});
+for(let i=0;i<1600;i++){n.fillStyle=`rgba(255,255,255,${Math.random()*.4})`;n.fillRect(Math.random()*W,Math.random()*H,1,1)}
+const cols=['255,255,255','200,220,255','255,235,200','255,205,205'];
+stars=Array.from({length:Math.round(W*H/5500)},()=>({x:Math.random()*W,y:Math.random()*H,z:Math.random(),r:Math.random()*1.2+.3,p:Math.random()*6.28,s:Math.random()*1.6+.4,c:cols[Math.random()*4|0]}))}
+function draw(){t+=.016;x.setTransform(1,0,0,1,0,0);x.drawImage(neb,0,0);x.scale(D,D);
+for(const s of stars){let yy=(s.y-sy*(.03+s.z*.12))%H;if(yy<0)yy+=H;const tw=reduce?1:.5+.5*Math.sin(t*s.s+s.p),a=(.3+.7*tw)*(.45+.55*s.z),r=s.r*(.6+s.z*.7);
+x.fillStyle=`rgba(${s.c},${a})`;x.beginPath();x.arc(s.x,yy,r,0,6.283);x.fill();
+if(s.r>1.2){x.fillStyle=`rgba(${s.c},${a*.15})`;x.beginPath();x.arc(s.x,yy,r*3.5,0,6.283);x.fill()}}
+if(!reduce){if(Math.random()<.004&&shoots.length<2)shoots.push({x:W*(.25+Math.random()*.7),y:Math.random()*H*.45,vx:-(8+Math.random()*5),vy:3.5+Math.random()*3,l:1});
+shoots=shoots.filter(m=>m.l>0);for(const m of shoots){const gr=x.createLinearGradient(m.x,m.y,m.x-m.vx*7,m.y-m.vy*7);gr.addColorStop(0,`rgba(255,255,255,${m.l})`);gr.addColorStop(1,'rgba(255,255,255,0)');x.strokeStyle=gr;x.lineWidth=1.6;x.beginPath();x.moveTo(m.x,m.y);x.lineTo(m.x-m.vx*7,m.y-m.vy*7);x.stroke();m.x+=m.vx;m.y+=m.vy;m.l-=.014}}
+if(!reduce)raf=requestAnimationFrame(draw)}
+build();draw();
+addEventListener('scroll',()=>{sy=scrollY},{passive:true});
+let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{cancelAnimationFrame(raf);build();draw()},200)});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)cancelAnimationFrame(raf);else if(!reduce){cancelAnimationFrame(raf);draw()}});
+})();
+
+// poster: placeholder shows until poster.jpg loads
+const pImg=document.getElementById('posterImg'),pF=document.getElementById('posterFrame');
+const okP=()=>{if(pImg.naturalWidth)pF.classList.add('loaded')};
+if(pImg.complete)okP();else pImg.addEventListener('load',okP);
+
+// header + scroll reveal
+const hdr=document.querySelector('header');
+addEventListener('scroll',()=>hdr.classList.toggle('solid',scrollY>40),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// background music: one handler, starts on first interaction, user can mute
+const music=document.getElementById('backgroundMusic'),btn=document.getElementById('musicToggle');
+music.volume=.35;let userMuted=false;
+const label=()=>btn.textContent=music.paused?'🔇 Music Off':'🔊 Music On';
+async function play(){try{await music.play()}catch(e){}label()}
+btn.addEventListener('click',e=>{e.stopPropagation();if(music.paused){userMuted=false;play()}else{userMuted=true;music.pause();label()}});
+['click','touchstart','keydown'].forEach(ev=>addEventListener(ev,()=>{if(!userMuted&&music.paused)play()},{once:true}));
+music.addEventListener('error',()=>{btn.hidden=true});
+label();
+
+// registration → WhatsApp
+document.getElementById('bookingForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const f=Object.fromEntries(new FormData(e.target));
+ const t=`Namaste Dr. Aditya Sharma,\nI would like to register for a session.\n\nName: ${f.name}\nMobile: ${f.phone}\nEmail: ${f.email||'-'}\nCity: ${f.city||'-'}\nService: ${f.service}\nMode: ${f.mode}\nPreferred date: ${f.date||'-'}\nPreferred time: ${f.time}\nMessage: ${f.message||'-'}`;
+ window.open('https://wa.me/919549456344?text='+encodeURIComponent(t),'_blank','noopener');
+ document.getElementById('formStatus').textContent='Opening WhatsApp with your details…';
+});
+</script>
+</body>
+</html>
